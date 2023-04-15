@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_browse_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPhoto"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/addImg"
+        android:layout_width="161dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="125dp"
+        android:src="@android:drawable/ic_dialog_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="177dp"
+        android:text="Add a vehicle"
+        android:textColor="#09163C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addImg" />
+
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="336dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="157dp"
+        android:text="This information will help us provide the most relevant data"
+        android:textAlignment="center"
+        android:textColor="#405BA8"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addHeader" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="78dp"
+        android:backgroundTint="#86A8DA"
+        android:text="Add +"
+        app:iconTint="#A63535"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addText"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="239dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="78dp"
+        android:backgroundTint="#C1DDFD"
+        android:text="Skip"
+        android:textColor="#153A68"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
